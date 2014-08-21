@@ -22,7 +22,7 @@ class confmon {
 
   # Install rabbitmq
   class { '::rabbitmq':
-        delete_guest_user => true,
+    delete_guest_user => true,
   }
 
   # Create rabbitmq vhost for /sensu
