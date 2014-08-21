@@ -63,7 +63,7 @@ class confmon {
   }
 
   class { 'uchiwa':
-    require => Clas['sensu'],
+    require => Class['sensu'],
   }
 
   uchiwa::api { 'Main Server':
