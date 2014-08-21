@@ -56,11 +56,22 @@ class confmon {
   class {'sensu':
     server            => true,
     api               => true,
-    dashboard         => true,
     rabbitmq_user     => 'sensu',
     rabbitmq_password => 'secret',
     client_name       => $fqdn,
     client_address    => '192.168.50.4',
+  }
+
+  class { 'uchiwa': }
+
+  uchiwa::api { 'Main Server':
+    host    => '192.168.50.4',
+    ssl     => false,
+    port    => 4567,
+    user    => 'sensu',
+    pass    => 'secret',
+    path    => '',
+    timeout => 5000
   }
 
 }
