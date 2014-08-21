@@ -62,7 +62,9 @@ class confmon {
     client_address    => '192.168.50.4',
   }
 
-  class { 'uchiwa': }
+  class { 'uchiwa':
+    require => Clas['sensu'],
+  }
 
   uchiwa::api { 'Main Server':
     host    => '192.168.50.4',
