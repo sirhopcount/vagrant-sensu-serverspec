@@ -34,7 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define :server do |conf|
     conf.vm.hostname = 'mon01.vagrant.local'
     conf.vm.network :private_network, ip: "192.168.50.4"
-    conf.vm.network :forwarded_port, guest: 8080, host: 8080
+    conf.vm.network :forwarded_port, guest: 3000, host: 3000
   end
 
   # Sensu client
