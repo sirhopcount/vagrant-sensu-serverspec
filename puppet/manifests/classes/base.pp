@@ -28,7 +28,8 @@ class base {
   }
 
   # Array of software packages that need to be installed
-  $pkgs_allow = [ 'sysstat',
+  $pkgs_allow = [
+                    'sysstat',
                     'atop',
                     'curl',
                     'htop',
@@ -36,7 +37,8 @@ class base {
                     'ngrep',
                     'vim',
                     'swaks',
-                    'tcpdump', ]
+                    'tcpdump',
+                ]
 
   # Install software packages
   package{ $pkgs_allow:
