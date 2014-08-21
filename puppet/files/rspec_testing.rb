@@ -4,7 +4,7 @@ require "rubygems"
 require "json"
 require "socket"
 
-serverspec_results = `cd /etc/serverspec ; ruby -S rspec spec/ --format json`
+serverspec_results = `cd /etc/serverspec ; /usr/local/bin/rspec spec/ --format json`
 parsed = JSON.parse(serverspec_results)
 
 parsed["examples"].each do |serverspec_test|
