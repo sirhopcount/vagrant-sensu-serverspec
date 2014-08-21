@@ -1,0 +1,72 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    fsalum-redis (1.0.0)
+      thias-sysctl (>= 0.3.0)
+    garethr-erlang (0.3.0)
+      puppetlabs-apt (>= 0)
+      puppetlabs-stdlib (>= 0)
+      stahnma-epel (>= 0)
+    maestrodev-wget (1.5.1)
+    nanliu-staging (0.4.1)
+    puppetlabs-apache (1.1.1)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.4.0)
+    puppetlabs-apt (1.4.2)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-concat (1.1.0)
+      puppetlabs-stdlib (>= 4.0.0)
+    puppetlabs-mysql (2.3.1)
+      puppetlabs-stdlib (>= 3.2.0)
+    puppetlabs-rabbitmq (4.1.0)
+      nanliu-staging (>= 0.3.1)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.0.0)
+    puppetlabs-stdlib (4.3.2)
+    richardc-datacat (0.6.0)
+    sensu-sensu (1.1.0)
+      maestrodev-wget (>= 1.4.5)
+      puppetlabs-apt (>= 0.0.1)
+      puppetlabs-stdlib (>= 0.0.1)
+    stahnma-epel (0.1.1)
+    thias-sysctl (0.3.2)
+
+GIT
+  remote: https://github.com/pauloconnor/pauloconnor-uchiwa
+  ref: master
+  sha: af4eb35675afb16d3dfdb8a5b026d3f8b74b133a
+  specs:
+    pauloconnor-uchiwa (0.2.4)
+      puppetlabs-apt (>= 0)
+      puppetlabs-stdlib (>= 0)
+      richardc-datacat (>= 0)
+
+GIT
+  remote: https://github.com/saz/puppet-resolv_conf
+  ref: master
+  sha: c747c4510a2587979c38f4ad9016122eb75833db
+  specs:
+    saz-resolv_conf (3.0.1)
+
+GIT
+  remote: https://github.com/sirhopcount/puppet-serverspec.git
+  ref: master
+  sha: 716996ca2ec2f0476a5b1cf56fd433469f79b401
+  specs:
+    sirhopcount-serverspec (0.0.1)
+
+DEPENDENCIES
+  fsalum-redis (>= 0)
+  garethr-erlang (>= 0)
+  nanliu-staging (>= 0)
+  pauloconnor-uchiwa (>= 0)
+  puppetlabs-apache (>= 0)
+  puppetlabs-apt (= 1.4.2)
+  puppetlabs-concat (>= 0)
+  puppetlabs-mysql (>= 0)
+  puppetlabs-rabbitmq (>= 0)
+  puppetlabs-stdlib (>= 0)
+  saz-resolv_conf (>= 0)
+  sensu-sensu (>= 0)
+  sirhopcount-serverspec (>= 0)
+
