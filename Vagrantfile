@@ -7,8 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Set box
-  config.vm.box = "ubuntu-12.04.4-64bit-vbox-4.3.10-puppet-2.7.25"
-  config.vm.box_url = "http://vagrant.goodfellasonline.nl/ubuntu-12.04.4-64bit-vbox-4.3.10-puppet-2.7.25.box"
+  config.vm.box = 'puppetlabs/ubuntu-12.04-64-puppet'
 
   # Set box memory to 1024
   config.vm.provider :virtualbox do |vb|
