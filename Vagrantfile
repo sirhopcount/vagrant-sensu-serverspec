@@ -15,7 +15,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Always run apt-get update
-  config.vm.provision "shell", inline: "apt-get update"
+  config.vm.provision "shell", inline: "apt-get update -y"
+
+  # Install RubyGems so `Provider gem is not functional on this host` doesnt happen
+  config.vm.provision "shell", inline: "apt-get install rubygems -y"
 
   # Create an extra shared folder for the puppet files folder
   config.vm.synced_folder "puppet/files", "/etc/puppet/files"
